@@ -92,7 +92,7 @@ System.out.println(value); // we have a compilation error
 
 ![logical_operators](img/logical_operators.JPG)
 
-| Notes
+> Notes
 
 - And: executes both sides to resolve it
 - Or: executes both sides to resolve it
