@@ -3,8 +3,7 @@
     Created on : Mar 5, 2019, 7:44:33 PM
     Author     : hiperezr
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8" import="java.lang.Math"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.lang.Math, java.io.*,java.util.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +11,46 @@
         <title>Practica 1</title>
     </head>
     <body>
+        
+      <form action = "index.jsp" method = "GET">
+         First Name: <input type = "text" name = "first_name">
+         <br>
+         Last Name: <input type = "text" name = "last_name" />
+         <input type = "submit" value = "f" />
+      </form>
+        
+      <h1>Using POST Method to Read Form Data</h1>
+      
+      <ul>
+         <li><p><b>First Name:</b>
+            <%= request.getParameter("first_name")%>
+         </p></li>
+         <li><p><b>Last  Name:</b>
+            <%= request.getParameter("last_name")%>
+         </p></li>
+      </ul>
+         
+      <form action = "test.jsp" method = "POST" target = "_blank">
+         <input type = "checkbox" name = "maths" checked = "checked" /> Maths
+         <input type = "checkbox" name = "physics"  /> Physics
+         <input type = "checkbox" name = "chemistry" checked = "checked" /> Chemistry
+         <input type = "submit" value = "Select Subject" />
+      </form>
+         
+      <ul>
+         <li><p><b>Maths Flag:</b>
+            <%= request.getParameter("maths")%>
+         </p></li>
+         <li><p><b>Physics Flag:</b>
+            <%= request.getParameter("physics")%>
+         </p></li>
+         <li><p><b>Chemistry Flag:</b>
+            <%= request.getParameter("chemistry")%>
+         </p></li>
+      </ul>
+         
+
+        
         <h1>Practica #1</h1>
 
         <%
