@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : employee_form
     Created on : Mar 7, 2019, 12:58:56 AM
     Author     : hiperezr
@@ -18,7 +18,7 @@
 
     <title>Get params</title>
   </head>
- 
+
   <body>
     <!-- Table -->
     <table class="table table-hover">
