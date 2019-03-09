@@ -11,7 +11,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Bootstrap JavaScript files -->
@@ -24,8 +24,17 @@
     </head>
 
   <body>
+    <!-- Presentation -->
+    <div class="jumbotron jumbotron-fluid text-center">
+            <h1 class="display-4">Programming III</h1>
+            <p class="lead">Class Programs</p>
+        <div class="container-fluid">
+        </div>
+    </div>
+    
+     
     <!-- Navigation menu -->
-    <div w3-include-html="bootstrap/navigation_menu.jsp"></div>
+    <div w3-include-html="bootstrap/menu/navigation_menu.jsp"></div>
 
     <div class="tab-content" id="pills-tabContent">
         <!-- Home tab -->
@@ -50,13 +59,13 @@
                 </div>
             </div>
         </div>
-        <!-- Form tab -->
+        <!-- Employee tab -->
         <div class="tab-pane fade" id="pills-employee" role="tabpanel" aria-labelledby="pills-employee-tab">
             <!-- Button card trigger modal -->
-            <div w3-include-html="bootstrap/cards/employee_card.jsp"></div>
+            <div w3-include-html="bootstrap/employee/cards/employee_card.jsp"></div>
             
             <!-- Employee modal -->
-            <div w3-include-html="bootstrap/modals/employee_modal.jsp"></div>
+            <div w3-include-html="bootstrap/employee/modals/employee_modal.jsp"></div>
         </div>
         <!-- Contact tab -->
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
@@ -74,7 +83,7 @@
                 </div>
             </div>
             <!-- Exam modal -->
-            <div w3-include-html="bootstrap/modals/exam_modal.jsp"></div>
+            <div w3-include-html="bootstrap/exam/modals/exam_modal.jsp"></div>
         </div>
             
         <br>

@@ -12,7 +12,7 @@
   <body>
     <!-- Exam modal -->
     <div class="modal fade" id="examModal" tabindex="-1" role="dialog" aria-labelledby="examModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <!--Modal content -->
             <div class="modal-content">
                 <!--Modal headers -->
@@ -25,7 +25,7 @@
                 <!--Modal body -->
                 <div class="modal-body">
                     <!-- Exam form -->
-                    <div w3-include-html="bootstrap/forms/exam_form.jsp"></div>
+                    <div w3-include-html="bootstrap/exam/forms/exam_form.jsp"></div>
                 </div>
                 <!--Modal footer -->
                 <div class="modal-footer">

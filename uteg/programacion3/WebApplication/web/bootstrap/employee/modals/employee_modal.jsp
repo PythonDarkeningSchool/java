@@ -5,7 +5,7 @@
   <body>
     <!-- Employee modal-->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <!--Modal content -->
             <div class="modal-content">
                 <!--Modal headers -->
@@ -18,7 +18,7 @@
                 <!--Modal body -->
                 <div class="modal-body">
                     <!--Employee form -->                            
-                    <div w3-include-html="bootstrap/forms/employee_form.jsp"></div>
+                    <div w3-include-html="bootstrap/employee/forms/employee_form.jsp"></div>
                 </div>
                 <!--Modal footer -->
                 <div class="modal-footer">

@@ -20,6 +20,7 @@
   </head>
  
   <body>
+      
     <!-- Table -->
     <table class="table table-hover">
         <!-- Table head -->
@@ -159,7 +160,7 @@
             %>
       </tbody>
     </table>
-
+      
     <button type="button" class="btn btn-warning" onclick="self.close()">Close this window</button>
 
     <!-- Optional JavaScript -->

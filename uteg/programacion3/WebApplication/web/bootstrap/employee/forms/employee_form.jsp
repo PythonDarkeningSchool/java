@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- Employee form -->
-    <form class="was-validated" action="bootstrap/employee_validation.jsp" method="GET" target="_blank">
+    <form class="was-validated" action="bootstrap/employee/validation/employee_validation.jsp" method="GET" target="_blank">
         <!-- Employee number -->
         <div class="form-group">
             <label for="inputNumber">Employee number</label>
