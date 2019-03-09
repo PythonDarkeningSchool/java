@@ -4,7 +4,7 @@
   </head>
   <body>
     <!-- Exam form -->
-    <form class="was-validated" action="bootstrap/exam/validation/validation.jsp" method="GET" target="_blank">
+    <form class="was-validated" action="bootstrap/exam/validation/exam_validation.jsp" method="GET" target="_blank">
         <!-- Question 1 textbox-->
         <div class="form-group">
             <!-- Question 1 button -->

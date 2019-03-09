@@ -34,28 +34,32 @@
     
      
     <!-- Navigation menu -->
-    <div w3-include-html="bootstrap/menu/navigation_menu.jsp"></div>
+    <div class="container">
+        <div w3-include-html="bootstrap/menu/navigation_menu.jsp"></div>
+    </div>
 
     <div class="tab-content" id="pills-tabContent">
         <!-- Home tab -->
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <!-- Buttons -->
-            <p>
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#class" aria-expanded="false" aria-controls="class">Class
-                </button>
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#student" aria-expanded="false" aria-controls="student">Student
-                </button>
-            </p>
-            <!-- Text -->
-            <div class="collapse" id="class">
-                <div class="card card-body">
-                    Programacion III
+            <div class="container">
+                <p>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#class" aria-expanded="false" aria-controls="class">Class
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#student" aria-expanded="false" aria-controls="student">Student
+                    </button>
+                </p>
+                <!-- Text -->
+                <div class="collapse" id="class">
+                    <div class="card card-body">
+                        Programacion III
+                    </div>
                 </div>
-            </div>
-            <div class="collapse" id="student">
-                <div class="card card-body">
-                    Humberto Israel Perez Rodriguez<br>
-                    UTEG
+                <div class="collapse" id="student">
+                    <div class="card card-body">
+                        Humberto Israel Perez Rodriguez<br>
+                        UTEG
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,25 +73,23 @@
         </div>
         <!-- Contact tab -->
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-            TBD Contact
+            <div class="container">
+                TBD Contact
+            </div>
         </div>
         <!-- Exam tab -->
         <div class="tab-pane fade" id="pills-exam" role="tabpanel" aria-labelledby="pills-exam-tab">
             <!-- Button trigger modal -->
-            <div class="card" style="width: 14rem;">
-                <img src="img/examIcon.png" class="card-img-top" alt="Exam icon"  height="100" width="50">
-                <div class="card-body">
-                    <h5 class="card-title">Exam</h5>
-                    <p class="card-text">Click on the button to start the exam</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#examModal">Launch exam</a>
-                </div>
-            </div>
+            <div w3-include-html="bootstrap/exam/cards/exam_card.jsp"></div>
+
             <!-- Exam modal -->
             <div w3-include-html="bootstrap/exam/modals/exam_modal.jsp"></div>
         </div>
             
         <br>
-        <button type="button" class="btn btn-light" onclick="location.reload()">Reload this window</button>
+        <div class="container">
+            <button type="button" class="btn btn-light" onclick="location.reload()">Reload this window</button>
+        </div>
 
     <!-- Scripts for imports HTMLs -->
     <script>
