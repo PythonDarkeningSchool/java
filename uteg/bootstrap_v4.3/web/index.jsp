@@ -27,13 +27,13 @@
 
     <!-- w3 include (for imports) -->
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    
+   
   </head>
   <body>
     <div class="container">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+            <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Home</a>
             <a class="nav-item nav-link" id="nav-insert-tab" data-toggle="tab" href="#nav-insert" role="tab" aria-controls="nav-insert" aria-selected="false">Insert</a>
             <a class="nav-item nav-link" id="nav-delete-tab" data-toggle="tab" href="#nav-delete" role="tab" aria-controls="nav-delete" aria-selected="false">Delete</a>
             <a class="nav-item nav-link" id="nav-update-tab" data-toggle="tab" href="#nav-update" role="tab" aria-controls="nav-update" aria-selected="false">Update</a>
@@ -184,7 +184,24 @@
         </div>
     </div>
    
+    <!-- Scripts for remain in the same nav tab after an event like POST, GET, REFRESH ...etc 
+    Tip: delete the element "active" and set aria-selected to false 
+    -->
+    <script>
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            var hash = $(e.target).attr('href');
+            if (history.pushState) {
+                history.pushState(null, null, hash);
+            } else {
+                location.hash = hash;
+            }
+        });
 
+            var hash = window.location.hash;
+            if (hash) {
+                $('.nav-link[href="' + hash + '"]').tab('show');
+            }
+    </script>
     <!-- Scripts for imports HTMLs -->
     <script>
         w3IncludeHTML();
