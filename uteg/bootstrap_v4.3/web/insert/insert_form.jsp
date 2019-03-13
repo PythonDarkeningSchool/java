@@ -17,32 +17,36 @@
 
   </head>
   <body>
+     <!-- Form -->
     <form>
+        <!-- Form row -->
       <div class="form-row">
         <div class="col-md-4 mb-3">
-          <input type="text" class="form-control" id="firstname" placeholder="First name" placeholder="firstname" required>
+          <input type="text" class="form-control" id="firstname" placeholder="First name" name="student_firstname" required>
         </div>
         <div class="col-md-4 mb-3">
-          <input type="text" class="form-control" id="lastname" placeholder="Last name" placeholder="lastname" required>
+          <input type="text" class="form-control" id="lastname" placeholder="Last name" name="student_lastname" required>
         </div>
       </div>
+       <!-- Form row -->
        <div class="form-row">
            <div class="col-md-8 mb-3">
              <div class="input-group">
                <div class="input-group-prepend">
                  <span class="input-group-text" id="emailaddress">@</span>
                </div>
-               <input type="text" class="form-control" id="emailaddress" placeholder="Email" aria-describedby="emailaddress" required>
+               <input type="text" class="form-control" id="emailaddress" placeholder="Email" name="student_email" aria-describedby="emailaddress" required>
              </div>
            </div>
        </div>
+       <!-- Form row -->
       <div class="form-row">
         <div class="col-md-8 mb-3">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <label class="input-group-text" for="career">Career</label>
               </div>
-              <select class="custom-select" id="career" required>
+              <select class="custom-select" id="career" name="student_career" required>
                 <option selected value="">Choose...</option>
                 <option value="1">Systems Engineering</option>
                 <option value="2">Electronic Engineering</option>
@@ -51,13 +55,14 @@
             </div>
         </div>
       </div>
+       <!-- Form row -->
       <div class="form-row">
         <div class="col-md-8 mb-3">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <label class="input-group-text" for="class">Class</label>
               </div>
-              <select class="custom-select" id="class" required>
+              <select class="custom-select" id="class" name="student_class" required>
                 <option selected value="">Choose...</option>
                 <option value="maths">Maths</option>
                 <option value="english">English</option>
@@ -69,17 +74,19 @@
             </div>
         </div>        
       </div>
+       <!-- Form row -->
        <div class="form-row">
            <div class="col-md-8 mb-3">
              <div class="input-group">
                <div class="input-group-prepend">
                  <span class="input-group-text" id="id">ID</span>
                </div>
-               <input type="text" class="form-control" id="id" placeholder="1111.." aria-describedby="id" required>
+               <input type="text" class="form-control" id="id" placeholder="1111.." aria-describedby="id" name="student_id" required>
              </div>
            </div>
        </div>
-      <button class="btn btn-primary" type="submit">Submit form</button>
+        <!-- Submit button -->
+      <button class="btn btn-primary" type="submit" name="buttonInsertStudent" value="InsertStudent">Submit form</button>
     </form>
       
 
