@@ -48,9 +48,9 @@
               </div>
               <select class="custom-select" id="career" name="student_career" required>
                 <option selected value="">Choose...</option>
-                <option value="1">Systems Engineering</option>
-                <option value="2">Electronic Engineering</option>
-                <option value="3">Computer Engineering</option>
+                <option value="SystemsEngineering">Systems Engineering</option>
+                <option value="ElectronicEngineering">Electronic Engineering</option>
+                <option value="ComputerEngineering">Computer Engineering</option>
               </select>
             </div>
         </div>
@@ -69,7 +69,7 @@
                 <option value="spanish">Spanish</option>
                 <option value="philosophy">Philosophy</option>
                 <option value="biology">Biology</option>
-                <option value="humansciences">Human Sciences</option>
+                <option value="humanSciences">Human Sciences</option>
               </select>
             </div>
         </div>        
