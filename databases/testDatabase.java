@@ -1,38 +1,59 @@
-import java.sql.DriverManager;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+/*=====================================================================
+File: 	 retrieveRS.java
+Summary: This Microsoft JDBC Driver for SQL Server sample application
+         demonstrates how to use a result set to retrieve a set of
+         data from a SQL Server database.
+---------------------------------------------------------------------
+This file is part of the Microsoft JDBC Driver for SQL Server Code Samples.
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+This source code is intended only as a supplement to Microsoft
+Development Tools and/or on-line documentation.  See these other
+materials for detailed information regarding Microsoft code samples.
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+=====================================================================*/
+import java.sql.*;
 
 public class testDatabase {
-    public static void main(String[] args){
-        String user = "generic", password = "generic";
-        String driver = "org.hsqldb.jdbcDriver";
-        String url = "jdbc:hsqldb:hsql://localhost/Business";
 
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        ResultSet resultSet = null;
+    public static void main(String[] args) {
 
-        try{
-            // Start the driver
-            Class.forName(driver);
-            connection = DriverManager.getConnection(url, user, password);
+        // Create a variable for the connection string.
+        String connectionUrl = "jdbc:sqlserver://localhost:1433;" +
+                "databaseName=bom;integratedSecurity=true;";
 
-            String sqlQuery = "SELECT * FROM Number";
-            preparedStatement = connection.prepareStatement(sqlQuery);
-            resultSet = preparedStatement.executeQuery();
+        // Declare the JDBC objects.
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet rs = null;
 
-            while(resultSet.next()){
-                System.out.println(resultSet.getInt("number"));
-                System.out.println(resultSet.getString("name"));
-                System.out.println(resultSet.getInt("departmentNumber"));
-                System.out.println(resultSet.getDate("hireDate"));
-            }
+        try {
+
+            // Establish the connection.
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            con = DriverManager.getConnection(connectionUrl);
+
+            // Create and execute an SQL statement that returns a
+            // set of data and then display it.
+            String SQL = "SELECT * FROM ProductBrief;";
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(SQL);
         }
-        catch (Exception e){
+
+        // Handle any errors that may have occurred.
+        catch (Exception e) {
             e.printStackTrace();
-            throw new RuntimeException(e);
         }
 
+        finally {
+            if (rs != null) try { rs.close(); } catch(Exception e) {}
+            if (stmt != null) try { stmt.close(); } catch(Exception e) {}
+            if (con != null) try { con.close(); } catch(Exception e) {}
+        }
     }
+
 }
