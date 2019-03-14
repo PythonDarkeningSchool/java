@@ -34,8 +34,11 @@
           <div class="modal-body">
           <div class="modal-body">
               <!-- Form -->
-                    <form method="GET">
+                    <form method="POST">
                       <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <input type="text" class="form-control" id="careerID" name="career_id" placeholder="Career ID.."  required>
+                        </div>
                         <div class="col-md-10 mb-3">
                           <input type="text" class="form-control" id="careerName" name="career_name" placeholder="Career name.."  required>
                         </div>

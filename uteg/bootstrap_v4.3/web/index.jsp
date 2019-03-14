@@ -144,7 +144,9 @@
                             // Determine values to insert in the database according the form
                             String target = (request.getParameter("buttonInsertClass") != null) ? "class" : "career";
                             String targetTable = (request.getParameter("buttonInsertClass") != null) ? "class" : "careers";
-                            String targeRow = (request.getParameter("buttonInsertClass") != null) ? "ClassName" : "CareerName";
+                            String targeRows = (request.getParameter("buttonInsertClass") != null) ? "ClassID, ClassName" : "CareerID, CareerName";
+                            String ID = (
+                                    request.getParameter("buttonInsertClass") != null) ?  request.getParameter("class_id") : request.getParameter("career_id");
                             String value = (
                                     request.getParameter("buttonInsertClass") != null) ?  request.getParameter("class_name") : request.getParameter("career_name");
 
@@ -162,7 +164,7 @@
                                 statement=connection.createStatement();
                                 // st.executeUpdate("INSERT INTO usuarios(id,password,nombre) VALUES (3,'12345','Federico')");
                                 statement.executeUpdate(
-                                        String.format("INSERT INTO %s(%s) VALUES (\"%s\")", targetTable, targeRow, value));
+                                        String.format("INSERT INTO %s(%s) VALUES (\"%s\",\"%s\")", targetTable, targeRows, ID,  value));
                                 //request.getRequestDispatcher("inicio").forward(request, response);
                              %>
                                 <!-- Show an alert -->

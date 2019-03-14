@@ -34,8 +34,11 @@
           <!-- Modal body -->
           <div class="modal-body">
               <!-- Form -->
-                    <form method="GET" action="">
+                    <form method="POST">
                       <div class="form-row">
+                        <div class="col-md-10 mb-3">
+                          <input type="text" class="form-control" id="classID" name="class_id" placeholder="Class ID.."  required>
+                        </div>
                         <div class="col-md-10 mb-3">
                           <input type="text" class="form-control" id="className" name="class_name" placeholder="Class name.."  required>
                         </div>

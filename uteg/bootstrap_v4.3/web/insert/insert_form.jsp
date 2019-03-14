@@ -18,7 +18,7 @@
   </head>
   <body>
      <!-- Form -->
-    <form>
+    <form method="POST">
         <!-- Form row -->
       <div class="form-row">
         <div class="col-md-4 mb-3">
@@ -48,9 +48,9 @@
               </div>
               <select class="custom-select" id="career" name="student_career" required>
                 <option selected value="">Choose...</option>
-                <option value="SystemsEngineering">Systems Engineering</option>
-                <option value="ElectronicEngineering">Electronic Engineering</option>
-                <option value="ComputerEngineering">Computer Engineering</option>
+                <option value="Systems Engineering">Systems Engineering</option>
+                <option value="Electronic Engineering">Electronic Engineering</option>
+                <option value="Computer Engineering">Computer Engineering</option>
               </select>
             </div>
         </div>
@@ -64,12 +64,12 @@
               </div>
               <select class="custom-select" id="class" name="student_class" required>
                 <option selected value="">Choose...</option>
-                <option value="maths">Maths</option>
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="philosophy">Philosophy</option>
-                <option value="biology">Biology</option>
-                <option value="humanSciences">Human Sciences</option>
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Biology">Biology</option>
+                <option value="Programming">Programming</option>
               </select>
             </div>
         </div>        
