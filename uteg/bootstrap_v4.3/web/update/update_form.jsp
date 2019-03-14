@@ -1,5 +1,5 @@
 <%-- 
-    Document   : insert_form
+    Document   : update_form
     Created on : Mar 13, 2019, 1:37:08 AM
     Author     : hiperezr
 --%>
@@ -30,33 +30,79 @@
     <form method="POST">
         <!-- Form row -->
       <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <input type="text" class="form-control" id="firstname" placeholder="First name" name="student_firstname" required>
-        </div>
-        <div class="col-md-4 mb-3">
-          <input type="text" class="form-control" id="lastname" placeholder="Last name" name="student_lastname" required>
-        </div>
+        <!--StudentID collapsible help -->
+        <a href="#StudentIDCollapsible" class="btn btn-info" data-toggle="collapse">Help</a>
+         <div id="StudentIDCollapsible" class="collapse">
+             You can update a register by the <strong>StudentID</strong>, to get it go to "Show data" tab
+         </div>
       </div>
        <!-- Form row -->
        <div class="form-row">
+           <!--StudentID input-->
            <div class="col-md-8 mb-3">
              <div class="input-group">
                <div class="input-group-prepend">
-                 <span class="input-group-text" id="emailaddress">@</span>
+                 <span class="input-group-text" id="StudentID">StudentID</span>
                </div>
-               <input type="text" class="form-control" id="emailaddress" placeholder="Email" name="student_email" aria-describedby="emailaddress" required>
+               <input type="text" class="form-control" id="StudentID" placeholder="ID" name="StudentID" aria-describedby="StudentID" required>
              </div>
            </div>
-       </div>
-       <!-- Form row -->
+        </div>
+        <!-- Form row -->
       <div class="form-row">
+          <!--StudentName checkbox -->
         <div class="col-md-8 mb-3">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <label class="input-group-text" for="career">Career</label>
+                <div class="input-group-text">
+                  <input type="checkbox" name="StudentNameCheckBox"> 
+                </div>
               </div>
-              <select class="custom-select" id="career" name="student_career" required>
-                <option selected value="">Choose...</option>
+              <input type="text" class="form-control" placeholder="Name" name="StudentNameInput">
+            </div>
+          </div>       
+      </div>
+        <!-- Form row -->
+      <div class="form-row">
+          <!--StudentLastName checkbox -->
+        <div class="col-md-8 mb-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <input type="checkbox" name="StudentLastNameCheckBox"> 
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Last name" name="StudentLastNameInput">
+            </div>
+          </div>       
+      </div>
+        <!-- Form row -->
+      <div class="form-row">
+          <!--StudentEmail checkbox -->
+        <div class="col-md-8 mb-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <input type="checkbox" name="StudentEmailCheckBox"> 
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Email" name="StudentEmailInput">
+            </div>
+          </div>       
+      </div>
+        <!-- Form row -->
+      <div class="form-row">
+          <!--StudentCareer checkbox -->
+        <div class="col-md-8 mb-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <!-- Set to value=1 to catch when POST this form -->
+                  <input type="checkbox" name="StudentCareerCheckBox" value="1"> 
+                </div>
+              </div>
+                <select class="custom-select" id="career" name="StudentCareerInput">
+                  <option selected value="">Career...</option>
                     <!-- Insert careers into listbox from the database-->
                     <%
                         // Define variables
@@ -86,19 +132,22 @@
                                       <strong>Error!</strong>  Could not insert careers into listbox from the database due to:  <%=e%>
                                     </div>
                            <% } %>
-              </select>
+                </select>
             </div>
-        </div>
+          </div>       
       </div>
-       <!-- Form row -->
+        <!-- Form row -->
       <div class="form-row">
+          <!--StudentClass checkbox -->
         <div class="col-md-8 mb-3">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <label class="input-group-text" for="class">Class</label>
+                <div class="input-group-text">
+                  <input type="checkbox" name="StudentClassCheckBox" value="1"> 
+                </div>
               </div>
-              <select class="custom-select" id="class" name="student_class" required>
-                <option selected value="">Choose...</option>
+                <select class="custom-select" id="class" name="StudentClassInput">
+                  <option selected value="">Class...</option>
                     <!-- Insert class into listbox from the database-->
                     <%
                         // Define variables
@@ -128,25 +177,13 @@
                                       <strong>Error!</strong>  Could not insert class into listbox from the database due to:  <%=e%>
                                     </div>
                            <% } %>
-              </select>
+                </select>
             </div>
-        </div>        
+          </div>       
       </div>
-       <!-- Form row -->
-       <div class="form-row">
-           <div class="col-md-8 mb-3">
-             <div class="input-group">
-               <div class="input-group-prepend">
-                 <span class="input-group-text" id="id">ID</span>
-               </div>
-               <input type="text" class="form-control" id="id" placeholder="1111.." aria-describedby="id" name="student_id" required>
-             </div>
-           </div>
-       </div>
         <!-- Submit button -->
-      <button class="btn btn-primary" type="submit" name="buttonInsertStudent" value="InsertStudent">Submit form</button>
+      <button class="btn btn-primary" type="submit" name="buttonUpdatetStudent" value="InsertStudent">Submit form</button>
     </form>
-      
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
