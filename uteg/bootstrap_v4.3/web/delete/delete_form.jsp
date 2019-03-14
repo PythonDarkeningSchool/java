@@ -15,6 +15,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <%
         // Define global variables
         String database = "university";
@@ -31,10 +32,12 @@
         <!-- Form row -->
       <div class="form-row">
         <!--StudentID collapsible help -->
+        <div class="col-md-8 mb-3">
         <a href="#StudentIDCollapsible" class="btn btn-info" data-toggle="collapse">Help</a>
          <div id="StudentIDCollapsible" class="collapse">
              You can delete a register by the <strong>StudentID</strong>, to get it go to "Show data" tab
          </div>
+        </div>
       </div>
        <!-- Form row -->
        <div class="form-row">

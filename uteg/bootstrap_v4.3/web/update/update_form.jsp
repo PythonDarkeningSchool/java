@@ -31,10 +31,12 @@
         <!-- Form row -->
       <div class="form-row">
         <!--StudentID collapsible help -->
-        <a href="#StudentIDCollapsible" class="btn btn-info" data-toggle="collapse">Help</a>
-         <div id="StudentIDCollapsible" class="collapse">
-             You can update a register by the <strong>StudentID</strong>, to get it go to "Show data" tab
-         </div>
+        <div class="col-md-8 mb-3">
+            <a href="#StudentIDCollapsible" class="btn btn-info" data-toggle="collapse">Help</a>
+             <div id="StudentIDCollapsible" class="collapse">
+                 You can update a register by the <strong>StudentID</strong>, to get it go to "Show data" tab
+             </div>
+        </div>
       </div>
        <!-- Form row -->
        <div class="form-row">

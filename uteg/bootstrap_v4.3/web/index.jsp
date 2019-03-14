@@ -76,9 +76,12 @@
                                 int numberOfRegisters = resultSet.getInt(1);
                              %>
                                 <!-- Show how many registers are in the database from students table -->
-                                <button type="button" class="btn btn-info">
-                                  Registers in the database <span class="badge badge-light"> <%=numberOfRegisters%></span>
-                                </button>
+                                <br>
+                                <div class="col-md-3 mb-3">
+                                    <button type="button" class="btn btn-info">
+                                      Registers in the database <span class="badge badge-light"> <%=numberOfRegisters%></span>
+                                    </button>
+                                </div>
                             <%} catch(Exception e) { %>
                                 <!-- Show an alert -->
                                 <div class="alert alert-danger alert-dismissible">
@@ -94,6 +97,7 @@
             </div>
             <!-- Insert tab -->
             <div class="tab-pane fade" id="nav-insert" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <br>
                 <div w3-include-html="insert/insert_modal.jsp"></div>
                   <!-- Submit button validation for insert tab  form -->
                     <%
@@ -146,6 +150,7 @@
             </div>
             <!-- Delete tab -->
             <div class="tab-pane fade" id="nav-delete" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <br>
                 <div w3-include-html="delete/delete_modal.jsp"></div>
                   <!-- Submit button validation for delete tab  form -->
                     <%
@@ -212,6 +217,7 @@
             </div>
             <!-- Update tab -->
             <div class="tab-pane fade" id="nav-update" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <br>
                 <div w3-include-html="update/update_modal.jsp"></div>
                   <!-- Submit button validation for update tab  form -->
                     <%
@@ -413,6 +419,7 @@
             </div>            
             <!--Admin tab -->
             <div class="tab-pane fade" id="nav-admin" role="tabpanel" aria-labelledby="nav-admin-tab">
+                <br>
                 <div w3-include-html="admin/admin_cards.jsp"></div>
                     <!-- Submit button validation for insertClass/insertCareers forms -->
                     <%
@@ -461,7 +468,8 @@
         </div>
         </div>
     </div>
-   
+  
+
     <!-- Scripts for remain in the same nav tab after an event like POST, GET, REFRESH ...etc 
     Tip: delete the element "active" and set aria-selected to false 
     -->
