@@ -2,14 +2,14 @@
 
 - [Introduccion](#introduccion)
 - [Como funciona el proyecto](#como-funciona-el-proyecto)
-  * [Pestaña `Home`](#pesta-a--home-)
-  * [Pestaña Admin](#pesta-a-admin)
+  * [Pestaña `Home`](#pestaña-home)
+  * [Pestaña `Admin`](#pestaña-admin)
     + [Insert class section](#insert-class-section)
     + [Insert Careers section](#insert-careers-section)
-  * [Pestaña `Insert`](#pesta-a--insert-)
-  * [Pestaña delete](#pesta-a-delete)
-  * [Pestaña update](#pesta-a-update)
-  * [Pestaña Show data](#pesta-a-show-data)
+  * [Pestaña `Insert`](#pestaña-insert)
+  * [Pestaña `delete`](#pestaña-delete)
+  * [Pestaña `update`](#pestaña-delete)
+  * [Pestaña `Show data`](#pestaña-admin)
 - [Desarrollo](#desarrollo)
   * [Escalabilidad y confiabilidad](#escalabilidad-y-confiabilidad)
   * [Creacion de tablas e insercion de datos](#creacion-de-tablas-e-insercion-de-datos)
@@ -49,7 +49,7 @@ Las tecnologias usadas para este proyecto fueron las siguientes:
 
 La imagen anterior muestra como luce la pestaña `Home` la cual su funcion principal es contar el numero de registros totales en la base de datos pero solo los datos en la tabla `Student`. Para mas informacion sobre como fue creada la tabla `Students` [Click aqui](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/README.md#tables-creation)
 
-## Pestaña Admin
+## Pestaña `Admin`
 
 ### Insert class section
 
@@ -94,7 +94,7 @@ Ejemplo:
 
 ![insert_tab_example](img/readme/gif/insert_tab_example.gif)
 
-## Pestaña delete
+## Pestaña `delete`
 
 En esta seccion se podran eliminar registros de base de datos del estudiante
 
@@ -108,7 +108,7 @@ Ejemplo:
 
 
 
-## Pestaña update
+## Pestaña `update`
 
 En esta seccion se podran actualizar registro por registro los datos de un estudiante
 
@@ -131,7 +131,7 @@ Ejemplo:
 
 ![update_tab_example](img/readme/gif/update_tab_example.gif)
 
-## Pestaña Show data
+## Pestaña `Show data`
 
 En esta pestaña se mostrara en tiempo real los registros en la base de datos y en esta se podra filtrar por cualquier campo en cualquier columna
 
@@ -293,7 +293,7 @@ En lo personal la base de datos utilizada (a pesar de ser muy popular) no es la 
 
 :link: [CSS](https://www.w3schools.com/csS/css_intro.asp)
 
-:link: [Bootstrap]​(https://getbootstrap.com)
+:link: [Bootstrap](https://getbootstrap.com)
 
 # Datos personales
 
