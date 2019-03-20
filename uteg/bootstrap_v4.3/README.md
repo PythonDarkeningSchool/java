@@ -1,3 +1,5 @@
+![mysql_icon](img/mysql_icon.png)
+
 # Tables creation
 
 ```mysql
