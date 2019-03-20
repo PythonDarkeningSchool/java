@@ -250,7 +250,7 @@ El servidor utilizado para este proyecto fue `Apache Tomcat` en su version *7.0.
 
 | Servidor      | Descripcion                                                  | Pagina Oficial                               | Imagen                                                   |
 | ------------- | ------------------------------------------------------------ | -------------------------------------------- | -------------------------------------------------------- |
-| Apache Tomcat | **Apache Tomcat** (también llamado **Jakarta Tomcat** o simplemente **Tomcat**) funciona como un contenedor de *servlets* desarrollado bajo el [proyecto Jakarta](https://es.wikipedia.org/wiki/Proyecto_Jakarta) en la [Apache Software Foundation](https://es.wikipedia.org/wiki/Apache_Software_Foundation). Tomcat implementa las especificaciones de los servlets y de [JavaServer Pages](https://es.wikipedia.org/wiki/JavaServer_Pages) (JSP) de [Oracle Corporation](https://es.wikipedia.org/wiki/Oracle_Corporation) (aunque creado por [Sun Microsystems](https://es.wikipedia.org/wiki/Sun_Microsystems)). | [Apache Web Page](http://tomcat.apache.org/) | ![apache_tomcat_icon](img/readme/apache_tomcat_icon.PNG) |
+| Apache Tomcat | **Apache Tomcat** (también llamado **Jakarta Tomcat** o simplemente **Tomcat**) funciona como un contenedor de *servlets* desarrollado bajo el [proyecto Jakarta](https://es.wikipedia.org/wiki/Proyecto_Jakarta) en la [Apache Software Foundation](https://es.wikipedia.org/wiki/Apache_Software_Foundation). Tomcat implementa las especificaciones de los servlets y de [JavaServer Pages](https://es.wikipedia.org/wiki/JavaServer_Pages) (JSP) de [Oracle Corporation](https://es.wikipedia.org/wiki/Oracle_Corporation) (aunque creado por [Sun Microsystems](https://es.wikipedia.org/wiki/Sun_Microsystems)). | [Apache Web Page](http://tomcat.apache.org/) | ![apache_tomcat_icon](img/readme/apache_tomcat_icon.png) |
 
 ## Base de datos
 
@@ -258,7 +258,7 @@ La base de datos utilizada en este proyecto fue `MySQL` debido a su gran popular
 
 | Base de datos | Descripcion                                                  | Pagina oficial                          | Imagen                                     |
 | ------------- | ------------------------------------------------------------ | --------------------------------------- | ------------------------------------------ |
-| MySQL         | MySQL es un sistema de administración de bases de datos (*Database Management System, DBMS*) para bases de datos relacionales | [MySQL Web Page](https://www.mysql.com) | ![my_sql_icon](img/readme/my_sql_icon.JPG) |
+| MySQL         | MySQL es un sistema de administración de bases de datos (*Database Management System, DBMS*) para bases de datos relacionales | [MySQL Web Page](https://www.mysql.com) | ![my_sql_icon](img/readme/my_sql_icon.jpg) |
 
 ## USB WebServer
 
