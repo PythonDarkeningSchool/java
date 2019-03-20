@@ -1,8 +1,7 @@
-`<``link` `rel``=``"stylesheet"` `href``=``"https://use.fontawesome.com/releases/v5.0.13/css/all.css"` `integrity``=``"sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"``crossorigin``=``"anonymous"``>`
-
-<script src="/path/to/markdown-it-checkbox.min.js"></script>
-
 # Tabla de contenidos
+
+<details>
+    <summary>Mostrar</summary>
 
 - [Introduccion](#introduccion)
 - [Como funciona el proyecto](#como-funciona-el-proyecto)
@@ -30,6 +29,8 @@
 - [Conclusion](#conclusion)
 - [Biografia](#biografia)
 - [Datos personales](#datos-personales)
+
+</details>
 
 # Introduccion
 
