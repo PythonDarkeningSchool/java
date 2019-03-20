@@ -50,3 +50,55 @@ El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://git
 
 ### La carpeta `delete`
 
+Esta carpeta contiene los siguientes archivos:
+
+![delete_files](img/readme/delete_files.JPG)
+
+:page_facing_up: `delete_modal.jsp` *=>* Este archivo contiene el modal que se invoca cuando se presiona el boton `GO!`
+
+![delete_modal_example](img/readme/delete_modal_example.JPG)
+
+El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/delete/delete_modal.jsp)
+
+:page_facing_up: `delete_form.jsp` *=>* Este archivo contiene el formulario dentro del modal que se invoca cuando se presiona el boton `GO!`, la imagen es la misma que la anterior
+
+El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/delete/delete_form.jsp)
+
+### La carpeta `img`
+
+Esta carpeta contiene todas las imagenes necesarias para desplegar nuestro sitio web las cuales son
+
+![img_folder_files](img/readme/img_folder_files.JPG)
+
+### La carpeta `insert`
+
+Esta contiene los siguientes archivos:
+
+![insert_folder_files](img/readme/insert_folder_files.JPG)
+
+:page_facing_up: `insert_modal.jsp` *=>Este archivo contiene el modal que se invoca cuando se presiona el boton `GO!* 
+
+![insert_modal_example](img/readme/insert_modal_example.JPG)
+
+El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/insert/insert_modal.jsp)
+
+:page_facing_up: `insert_form.jsp` *=>* Este archivo contiene el formulario dentro del modal que se invoca cuando se presiona el boton `GO!`, la imagen es la misma que la anterior
+
+El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/insert/insert_form.jsp)
+
+### La carpeta `update`
+
+Esta contiene los siguientes archivos:
+
+![update_folder_files](img/readme/update_folder_files.JPG)
+
+:page_facing_up: `update_modal.jsp` *=>Este archivo contiene el modal que se invoca cuando se presiona el boton `GO!* 
+
+![update_modal_example](img/readme/update_modal_example.JPG)
+
+El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/update/update_modal.jsp)
+
+:page_facing_up: `update_form.jsp` *=>* Este archivo contiene el formulario dentro del modal que se invoca cuando se presiona el boton `GO!`, la imagen es la misma que la anterior
+
+El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/update/update_form.jsp)
+
