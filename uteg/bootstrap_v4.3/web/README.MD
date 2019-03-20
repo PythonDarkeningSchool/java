@@ -1,3 +1,32 @@
+# Tabla de contenidos
+
+- [Introduccion](#introduccion)
+- [Como funciona el proyecto](#como-funciona-el-proyecto)
+  * [Pestaña `Home`](#pesta-a--home-)
+  * [Pestaña Admin](#pesta-a-admin)
+    + [Insert class section](#insert-class-section)
+    + [Insert Careers section](#insert-careers-section)
+  * [Pestaña `Insert`](#pesta-a--insert-)
+  * [Pestaña delete](#pesta-a-delete)
+  * [Pestaña update](#pesta-a-update)
+  * [Pestaña Show data](#pesta-a-show-data)
+- [Desarrollo](#desarrollo)
+  * [Escalabilidad y confiabilidad](#escalabilidad-y-confiabilidad)
+  * [Creacion de tablas e insercion de datos](#creacion-de-tablas-e-insercion-de-datos)
+  * [Estructura del projecto](#estructura-del-projecto)
+    + [La carpeta `admin`](#la-carpeta--admin-)
+    + [La carpeta `delete`](#la-carpeta--delete-)
+    + [La carpeta `img`](#la-carpeta--img-)
+    + [La carpeta `insert`](#la-carpeta--insert-)
+    + [La carpeta `update`](#la-carpeta--update-)
+- [Herramientas utilizadas para el desarrollo](#herramientas-utilizadas-para-el-desarrollo)
+  * [Servidor web](#servidor-web)
+  * [Base de datos](#base-de-datos)
+  * [USB WebServer](#usb-webserver)
+- [Conclusion](#conclusion)
+- [Biografia](#biografia)
+- [Datos personales](#datos-personales)
+
 # Introduccion
 
 Se desarrollo un projecto web con la finalidad de conectarlo con una base de datos en `mysql.`
@@ -235,3 +264,41 @@ Que es USBWebServer?
 Es una combinacion de populares softwares como: Apache, MySQL, PHP y phpMyAdmin. Con esta herramienta es posible mostrar tus sitios web en `PHP` asi como en `JSP` en donde sea.
 
 Sitio oficial: :link: [USB WebServer](https://www.usbwebserver.net/webserver)​
+
+# Conclusion
+
+Este proyecto en lo personal me tomo mucho tiempo en integrar el framework `bootstrap` con la parte web ya que es un proyecto visualmente agradable.
+
+Java Server Pages (`JSP`) es una tecnologia muy robusta para el desarrollo web aunque no es la mejor en mi punto de vista personal para desarrollo web, JavaScript es la mejor eleccion ya que tiene muchas mas bondades pero al igual tiene muchas contras, JavaScript se compensa en su gran mayoria con el lenguage de alto nivel `TypeScript`.
+
+Quede muy satisfecho con este proyecto ya que mi pasion siempre ha sido desarrollar la parte web (front-end) para integralo con un servicio de base de datos.
+
+En lo personal la base de datos utilizada (a pesar de ser muy popular) no es la mejor eleccion, ya que esta muy de moda (y con buena razon) utilizar software de licencia libre y multiplataforma, en este caso la mejor eleccion de bases de datos *no relaciones* hubiera sido `mongoDB`
+
+# Biografia
+
+ A lo largo de este ensayo se inscrustraron varios links con referencias a lo que se esta hablando, este apartado es un resumen de los lnks mencionados:
+
+:link: [USB Webserver](https://www.usbwebserver.net/webserver)
+
+:link: [Apache Tomcat](http://tomcat.apache.org)
+
+:link: [MySQL](https://www.mysql.com)
+
+:link: [JavaScript](https://www.javascript.com)
+
+:link: [Java](https://www.java.com/es)
+
+:link: [HTML](https://en.wikipedia.org/wiki/HTML)
+
+:link: [CSS](https://www.w3schools.com/csS/css_intro.asp)
+
+:link: [Bootstrap]​(https://getbootstrap.com)
+
+# Datos personales
+
+- Materia: Programacion III
+- Maestro: Pedro Echeverria
+- Alumno: Humberto Israel Perez Rodriguez
+- Carrera: Ingeneria en Computacion
+- Grado: 4 Cuatrimestre
