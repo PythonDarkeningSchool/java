@@ -12,6 +12,27 @@ Las tecnologias usadas para este proyecto fueron las siguientes:
 | 4    | HTML       | HTML es un lenguaje de programación que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto :point_right: [Mas informacion aqui](https://codigofacilito.com/articulos/que-es-html) | ![HTML](img/readme/html_icon.png)             |
 | 5    | CSS        | Es un lenguaje que define la apariencia de un documento escrito en un lenguaje de marcado (por ejemplo, [HTML](http://www.arumeinformatica.es/dudas/html)) :point_right: [Mas informacion aqui](​http://www.arumeinformatica.es/dudas/css) | ![css](img/readme/css_icon.png)               |
 
+# Como funciona el proyecto
+
+## Pestaña `Home`
+
+![home_tab](img/readme/home_tab.JPG)
+
+La imagen anterior muestra como luce la pestaña `Home` la cual su funcion principal es contar el numero de registros totales en la base de datos pero solo los datos en la tabla `Student`. Para mas informacion sobre como fue creada la tabla `Students` [Click aqui](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/README.md#tables-creation)
+
+## Pestaña Admin
+
+### Insert class
+
+En esta seccion se podra insertar clases a la base de datos, a la tabla `Class` ([Consultar como la tabla fue creada](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/README.md#tables-creation)).
+
+Los campos requeridos son:
+
+- `Class ID`: que es el ID para identificar una clase insertada, este no puede repetirse, de lo contrario la base de datos regresara un error
+- `Class Name`: El cual es el nombre de la clase que va ligada a su `Class ID` y de igual manera este no podra ser repetido ya que la base de datos arrojara un error
+
+![admin_insert_class](img/readme/git/admin_insert_class.GIF)
+
 # Desarrollo
 
 ## Escalabilidad y confiabilidad
@@ -110,6 +131,8 @@ El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://git
 
 El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/update/update_form.jsp)
 
+# Herramientas utilizadas para el desarrollo
+
 ## Servidor web
 
 El servidor utilizado para este proyecto fue `Apache Tomcat` en su version *7.0.93*
@@ -126,7 +149,7 @@ La base de datos utilizada en este proyecto fue `MySQL` debido a su gran popular
 | ------------- | ------------------------------------------------------------ | --------------------------------------- | ------------------------------------------ |
 | MySQL         | MySQL es un sistema de administración de bases de datos (*Database Management System, DBMS*) para bases de datos relacionales | [MySQL Web Page](https://www.mysql.com) | ![my_sql_icon](img/readme/my_sql_icon.JPG) |
 
-## Herramientas
+## USB WebServer
 
 La herramienta usada en este proyecto fue `USBWebServer` por su facilidad de uso, ya que para los sistemas operativos Windows es portable.
 
