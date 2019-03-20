@@ -22,29 +22,29 @@ Este proyecto fue desarrollado con un sistema de control de versiones (:link: [g
 
 En github el projecto esta estructurado como se muestra a continuacion
 
-![folder_structure](img/readme/folder_structure.jpg)
+![folder_structure](img/readme/folder_structure.JPG)
 
 ### La carpeta `admin`
 
 Esta carpeta contiene los siguientes archivos
 
-![admin_cards_files](img/readme/admin_cards_files.jpg)
+![admin_cards_files](img/readme/admin_cards_files.JPG)
 
 :page_facing_up: `admin_cards.jsp` *=>* Este archivo contiene las siguientes vistas las cuales pertenencen al tab `Admin`
 
-![admin_cards_example](img/readme/admin_cards_example.jpg) 
+![admin_cards_example](img/readme/admin_cards_example.JPG) 
 
 El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/admin/admin_cards.jsp)​
 
 :page_facing_up: `admin_modal_careers.jsp` *=>* Este archivo contiene el modal cuando se invoca al boton `GO!`
 
-![modal_careers_example](img/readme/modal_careers_example.jpg)
+![modal_careers_example](img/readme/modal_careers_example.JPG)
 
 El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/admin/admin_modal_careers.jsp)
 
 :page_facing_up: `admin_modal_class.jsp` *=>* Este archivo contiene el modal cuando se invoca al boton `GO!`
 
-![modal_class_example](img/readme/modal_class_example.jpg)
+![modal_class_example](img/readme/modal_class_example.JPG)
 
 El codigo que contiene es el siguiente :floppy_disk: [Ver en github](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/web/admin/admin_modal_class.jsp)
 
