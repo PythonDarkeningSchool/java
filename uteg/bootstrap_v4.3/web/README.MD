@@ -1,7 +1,7 @@
 # Tabla de contenidos
 
-<details>
-    <summary>Mostrar</summary>
+<details open>
+    <summary>Mostrar/Ocultar</summary>
 
 - [Introduccion](#introduccion)
 - [Como funciona el proyecto](#como-funciona-el-proyecto)
