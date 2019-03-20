@@ -31,7 +31,7 @@ Los campos requeridos son:
 - `Class ID`: que es el ID para identificar una clase insertada, este no puede repetirse, de lo contrario la base de datos regresara un error
 - `Class Name`: El cual es el nombre de la clase que va ligada a su `Class ID` y de igual manera este no podra ser repetido ya que la base de datos arrojara un error
 
-![admin_insert_class](img/readme/git/admin_insert_class.GIF)
+![admin_insert_class](img/readme/gif/admin_insert_class.gif)
 
 # Desarrollo
 
