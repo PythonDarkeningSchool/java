@@ -22,7 +22,7 @@ La imagen anterior muestra como luce la pestaña `Home` la cual su funcion princ
 
 ## Pestaña Admin
 
-### Insert class
+### Insert class section
 
 En esta seccion se podra insertar clases a la base de datos, a la tabla `Class` ([Consultar como la tabla fue creada](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/README.md#tables-creation)).
 
@@ -31,7 +31,84 @@ Los campos requeridos son:
 - `Class ID`: que es el ID para identificar una clase insertada, este no puede repetirse, de lo contrario la base de datos regresara un error
 - `Class Name`: El cual es el nombre de la clase que va ligada a su `Class ID` y de igual manera este no podra ser repetido ya que la base de datos arrojara un error
 
+Ejemplo:
+
 ![admin_insert_class](img/readme/gif/admin_insert_class.gif)
+
+### Insert Careers section
+
+En esta seccion se podra insertar carreras a la base de datos, a la tabla `Careers` ([Consultar como la tabla fue creada](https://github.com/PythonDarkeningSchool/java/blob/master/uteg/bootstrap_v4.3/README.md#tables-creation)).
+
+Los campos requeridos son:
+
+- `Career ID`: el cual es el identificador de la carrera y este no podra ser repetido ya que de lo contrario la base de datos arrojara un error
+- `Career Name`: el cual es el nombre de la carrera y este no podra ser repetido ya que de lo contrario la base de datos arrojara un error
+
+Ejemplo:
+
+![admin_insert_career](img/readme/gif/admin_insert_career.gif)
+
+## Pestaña `Insert`
+
+En esta seccion se podran insertar registros a la base de datos los cuales son los datos de un estudiante.
+
+Los campos requeridos son:
+
+- `First Name`: el cual el el nombre(s) del estudiante
+- `Last Name`: el cual es el apellido del estudiante
+- `Email`: el cual es el email del estudiante
+- `Career`: el cual es la carrera a la cual el estudiante se registrara
+- `Class`: el cual es la clase a la cual el estudiante se registrara
+- `ID`: el cual es el identificador del estudiante
+
+Ejemplo:
+
+![insert_tab_example](img/readme/gif/insert_tab_example.gif)
+
+## Pestaña delete
+
+En esta seccion se podran eliminar registros de base de datos del estudiante
+
+Los campos requeridos son:
+
+- `StudentID`: El cual es el `identificador` del estudiante previamente registrado en la pestaña de `Insert`
+
+Ejemplo:
+
+![delete_tab_example](img/readme/gif/delete_tab_example.gif)
+
+
+
+## Pestaña update
+
+En esta seccion se podran actualizar registro por registro los datos de un estudiante
+
+Los campos requeridos son:
+
+- `StudentID`: El cual es el `identificador` del estudiante previamente registrado en la pestaña de `Insert`, si el `ID` no existe, la base de datos regresara un error
+
+Los campos opcionales son:
+
+- `Name`: el cual es el nuevo -
+- nombre del estudiante
+- `Last Name`: el cual es el nuevo apellido del estudiante
+- `Email`: el cual es el nuevo email del estudiante
+- `Career`: el cual es la nueva carrera a la cual el estudiante pertencera
+- `Class`: el cual es la nueva clase a la que el estudiante pertenecera
+
+> El campo que se necesite actualizar solo es necesario hacer click en el checkbox antes de dar click en el boton `Submit form`
+
+Ejemplo:
+
+![update_tab_example](img/readme/gif/update_tab_example.gif)
+
+## Pestaña Show data
+
+En esta pestaña se mostrara en tiempo real los registros en la base de datos y en esta se podra filtrar por cualquier campo en cualquier columna
+
+Ejemplo:
+
+![show_data_tab_example](img/readme/gif/show_data_tab_example.gif)
 
 # Desarrollo
 
